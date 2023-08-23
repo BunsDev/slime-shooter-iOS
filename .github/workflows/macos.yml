@@ -112,16 +112,6 @@ jobs:
           xcrun productsign --sign "$INSTALLER_CERT_NAME" unsigned.pkg "$PACKAGE_NAME"
           rm -f unsigned.pkg
 
-      - name: Compress macOS build
-        id: compress
-        run: |
-          zipName="Ricochlime_v${{ needs.get-version.outputs.buildName }}.app.zip"
-          echo "zipName=$zipName" >> $GITHUB_OUTPUT
-
-          pushd build/macos/Build/Products/Release
-          zip -r "$zipName" "Ricochlime.app"
-          popd
-
       - name: Restore keychain
         run: |
           keychain use-login
@@ -130,7 +120,7 @@ jobs:
         uses: actions/upload-artifact@v3
         with:
           name: Ricochlime-macOS-Archive
-          path: build/macos/Build/Products/Release/${{ steps.compress.outputs.zipName }}
+          path: ${{ steps.package.outputs.PACKAGE_NAME }}
 
       - name: Publish to App Store
         run: app-store-connect publish --path ${{ steps.package.outputs.PACKAGE_NAME }}
