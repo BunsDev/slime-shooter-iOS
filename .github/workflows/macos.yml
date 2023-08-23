@@ -87,12 +87,9 @@ jobs:
       - name: Build for macOS
         run: |
           flutter build macos
-          ls -l@ build/macos/Build/Products/Release
-          xattr build/macos/Build/Products/Release/*.app
-          echo 'Removing extended attributes'
-          xattr -rc build/macos/Build/Products/Release/*.app
-          echo 'Setting frag shader permissions'
-          find build/macos/Build/Products/Release -name "*.frag" -exec chmod 0644 {} \;
+
+          echo "Setting read permissions (for all users) on build directory"
+          chmod -R a+r build
 
       - name: Package for App Store
         id: package
