@@ -5,14 +5,10 @@
 // 'flutter create' template.
 
 // The application's name. By default this is also the title of the Flutter window.
-PRODUCT_NAME = Ricochlime
+PRODUCT_NAME = ricochlime
 
 // The application's bundle identifier
-PRODUCT_BUNDLE_IDENTIFIER = com.adilhanney.ricochlime
+PRODUCT_BUNDLE_IDENTIFIER = com.example.ricochlime
 
 // The copyright displayed in application information
-PRODUCT_COPYRIGHT = Copyright © 2023 Adil Hanney. All rights reserved.
-
-#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.release.xcconfig"
-#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.profile.xcconfig"
-#include "Pods/Target Support Files/Pods-Runner/Pods-Runner.debug.xcconfig"
+PRODUCT_COPYRIGHT = Copyright © 2023 com.example. All rights reserved.

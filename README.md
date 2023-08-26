@@ -1,31 +1,16 @@
-# <img src="assets/icon/icon.png" width="30" height="30" alt="Logo"> Ricochlime
+# ricochlime
 
-Ricochlime is a game where you attack the advancing slimes with your ricocheting projectiles. The game is made with the [Flame](https://flame-engine.org/) game engine and [Flutter](https://flutter.dev/).
+A new Flutter project.
 
-[<img src='assets_raw/google-play-badge.png'
-    alt='Get it on Google Play'
-    height=80>][google_play]
-&nbsp;
-[<img src='assets_raw/app-store-badge.svg'
-    alt='Get it on the App Store'
-    height=80>][app_store]
-&nbsp;
-[<img src='assets_raw/pwa-badge.png'
-    alt='Launch as web app'
-    height=80>][web_app]
-&nbsp;
-[<img src="assets_raw/windows-badge.png"
-    alt="Download for Windows"
-    height=80>][download_windows]
-&nbsp;
-[<img src="assets_raw/appimage-logo.png"
-    alt="Get it as an AppImage"
-    height=80>][download_appimage]
+## Getting Started
 
-<img src='metadata/en-US/images/tenInchScreenshots/game.png' alt='Game screen with a player at the bottom facing multiple slimes' />
+This project is a starting point for a Flutter application.
 
-[google_play]: https://play.google.com/store/apps/details?id=com.adilhanney.ricochlime
-[app_store]: https://apps.apple.com/app/ricochlime/id6459539993
-[web_app]: https://ricochlime.adil.hanney.org
-[download_windows]: https://github.com/adil192/ricochlime/releases/download/v0.5.1/RicochlimeInstaller_v0.5.1.exe
-[download_appimage]: https://github.com/adil192/ricochlime/releases/download/v0.5.1/Ricochlime-0.5.1-x86_64.AppImage
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
