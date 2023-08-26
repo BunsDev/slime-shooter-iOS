@@ -7,8 +7,6 @@ on:
   # Enable manual run
   workflow_dispatch:
   push:
-    tags:
-      - '**'
 
 jobs:
   get-version:
@@ -129,5 +127,4 @@ jobs:
           path: build/macos/Build/Products/Release/${{ steps.compress.outputs.zipName }}
 
       - name: Publish to App Store
-        if: ${{ startsWith(github.ref, 'refs/tags/') }}
         run: app-store-connect publish --path ${{ steps.package.outputs.PACKAGE_NAME }}
